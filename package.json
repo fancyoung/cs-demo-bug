@@ -1,0 +1,21 @@
+{
+  "name": "cs-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cornerstonejs/core": "^2.6.1",
+    "@cornerstonejs/dicom-image-loader": "^2.6.1",
+    "dicom-parser": "^1.8.21",
+    "vite": "^6.0.2",
+    "worker-plugin": "^5.0.1"
+  }
+}
