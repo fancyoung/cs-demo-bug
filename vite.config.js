@@ -1,9 +1,12 @@
+import { viteCommonjs } from "@originjs/vite-plugin-commonjs"
 import { fileURLToPath } from 'url'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
+  plugins: [viteCommonjs()],
   optimizeDeps: {
-    exclude: ['@cornerstonejs/dicom-image-loader']
+    exclude: ['@cornerstonejs/dicom-image-loader'],
+    include: ["dicom-parser"],
   },
   build: {
     sourcemap: true,
